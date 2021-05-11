@@ -26,20 +26,6 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-	<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(78157894, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/78157894" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -326,13 +312,12 @@
               <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
               Знаете, а она мне нравится, несмотря на ее скептицизм, упертость, нежелание верить в чудеса - она мне нравится и вы с этим ничего не сделаете!
               <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+			  <br>
+			  <div id="place"></div>
+			  <img src = "img/pleading.png" style="width:70px; height:70px; display:block; margin: 5px auto;"/>
             </p>
           </div>
-
-          
-
         </div>
-
       </div>
     </section><!-- #testimonials -->
 
@@ -445,6 +430,15 @@
   <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
+    <script type="text/javascript">
+var res = document.getElementById("place");
+var current = new Date(); 
+var old = new Date("2021-02-22"); 
+var days = Math.ceil(Math.abs(old.getTime() - current.getTime()) / (1000 * 3600 * 24));
+var year = Math.floor(days / 365); 
+var months = Math.floor((days - (year * 365)) / 30);
+res.innerHTML = 'Жду, когда она передумает уже: ' + days + ' дней';
+</script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
