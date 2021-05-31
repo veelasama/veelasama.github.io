@@ -1575,6 +1575,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 .gif {
+  margin-bottom:5px;
   display:block;
   margin: 0 auto;
   width: 300px;
