@@ -1587,3 +1587,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .testimonial-item {
  background: url("../img/bgt.jpg") center top no-repeat;
 }
+.testimonial-item p, h4 {
+  color: #000000;
+}
